@@ -118,7 +118,9 @@ export default function Home() {
       {/* 1. Hero 섹션 */}
       <section
         id="hero"
-        ref={el => (sectionsRef.current.hero = el)}
+        ref={(el) => {
+          sectionsRef.current.hero = el;
+        }}
         className="relative flex h-screen items-center justify-center overflow-hidden"
       >
         <video
@@ -181,7 +183,9 @@ export default function Home() {
       {/* 2. 두번째 영상 섹션 */}
       <section
         id="video2"
-        ref={el => (sectionsRef.current.video2 = el)}
+        ref={(el) => {
+          sectionsRef.current.video2 = el;
+        }}
         className="relative flex h-screen items-center justify-center overflow-hidden bg-black"
       >
         <video
@@ -208,7 +212,9 @@ export default function Home() {
       {/* 3. 이미지 갤러리 섹션 – 화면 전체를 8장 이미지로 채움 */}
       <section
         id="gallery"
-        ref={el => (sectionsRef.current.gallery = el)}
+        ref={(el) => {
+          sectionsRef.current.gallery = el;
+        }}
         className="relative h-screen overflow-hidden bg-black"
       >
         <div className="grid h-full w-full grid-cols-2 grid-rows-4 md:grid-cols-4 md:grid-rows-2">
@@ -238,7 +244,9 @@ export default function Home() {
              {/* 4. 설명 섹션 */}
       <section
         id="about"
-        ref={(el) => (sectionsRef.current.about = el)}
+        ref={(el) => {
+          sectionsRef.current.about = el;
+        }}
         className="relative min-h-screen overflow-hidden bg-gray-50"
       >
         {/* 상단 큰 텍스트 – 왼쪽 끝에서 시작, 살짝 우측으로만 움직이게 */}
@@ -354,7 +362,9 @@ ChatGPT로 콘셉트와 스토리라인을 구체화한 후 전체 내러티브�
       {/* 5. 컨택트 섹션 – 화면 전체를 채우고, 중앙 번호/이메일 + 하단 푸터 */}
       <section
         id="contact"
-        ref={el => (sectionsRef.current.contact = el)}
+        ref={(el) => {
+          sectionsRef.current.contact = el;
+        }}
         className="relative flex h-screen w-full flex-col overflow-hidden bg-white"
       >
         {/* 중앙 번호 + 이메일 */}
